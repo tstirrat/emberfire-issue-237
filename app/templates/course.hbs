@@ -1,0 +1,9 @@
+{{#link-to 'index'}}Home{{/link-to}}
+<h2>Course: {{model.title}}</h2>
+<ul>
+{{#each model.lessons as |video|}}
+  <li>{{video.title}}</li>
+{{/each}}
+</ul>
+
+<button {{action "create"}}>Create</button>

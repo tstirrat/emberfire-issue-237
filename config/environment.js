@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'issue-237',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio-demo.com" },
+    firebase: 'https://emberfire-issue-237.firebaseio-demo.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

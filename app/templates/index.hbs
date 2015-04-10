@@ -1,0 +1,7 @@
+<ul>
+{{#each model as |course|}}
+  <li>{{#link-to 'course' course}}{{course.title}}{{/link-to}}</li>
+{{/each}}
+</ul>
+
+<button {{action "create"}}>Create</button>
